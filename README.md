@@ -157,14 +157,3 @@ Generates `confusion_matrix.png` and `score_distribution.png` and prints a full 
 | `--batch-size` | 256 | Training batch size |
  
 ---
- 
-## Extending the project
- 
-- **Self-play training** — generate games between two copies of the engine and label with game result
-- **Policy head** — add a second output head predicting move probabilities (full AlphaZero style)
-- **Stockfish labels** — replace result-based labels with centipawn evaluations for better draw detection
-- **Opening book** — load ECO openings and skip search in the first 10 moves
-- **UCI protocol** — implement the Universal Chess Interface so the engine works in GUIs like Arena or Lichess's board editor
-- **Web UI** — expose the engine via FastAPI and build a browser board with `chess.js`
- 
----
